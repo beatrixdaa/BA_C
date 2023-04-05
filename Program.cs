@@ -101,7 +101,6 @@ namespace Exerchise1
                                                     }
                                                 }
                                                 break;
-                                          
                                                 {
                                                     string nim, almt;
                                                     Console.Clear();
@@ -120,8 +119,6 @@ namespace Exerchise1
 
                                                 }
                                         }
-                                        
-
                                     }
                                     catch
                                     {
