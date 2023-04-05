@@ -159,8 +159,8 @@ namespace Insert_and_Get_Data
             cmd.Parameters.Add(new SqlParameter("Phn", notlpn));
             cmd.ExecuteNonQuery();
             Console.WriteLine("Data Berhasil Ditambahkan");
-            
-            
+
+
         }
     }
 }
