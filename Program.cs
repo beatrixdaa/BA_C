@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Insert_and_Get_Data
+namespace Exerchise1
 {
     class Program
     {
@@ -85,16 +85,42 @@ namespace Insert_and_Get_Data
                                                 }
                                                 break;
                                             case '3':
-                                                conn.Close();
-                                                return;
-                                            default:
                                                 {
+                                                    string nim;
                                                     Console.Clear();
-                                                    Console.WriteLine("\nInvalid option");
+                                                    Console.WriteLine("Input student data  ");
+                                                    Console.WriteLine("Input NIM :");
+                                                    nim = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.delete(nim, conn);
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\n You dont have premission to delete data");
+                                                    }
                                                 }
                                                 break;
-                                        }
+                                            case '4':
+                                                {
+                                                    string nim, almt;
+                                                    Console.Clear();
+                                                    Console.WriteLine("Input student NIM that you want to change their address");
+                                                    nim = Console.ReadLine();
+                                                    Console.WriteLine("Input the new student Address : ");
+                                                    almt = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.delete(almt, conn);
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\n You dont have premission to delete data");
+                                                    }
 
+                                                }
+                                        }
+                                        
 
                                     }
                                     catch
