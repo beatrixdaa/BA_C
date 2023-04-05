@@ -32,7 +32,7 @@ namespace Exerchise1
                         case 'K':
                             {
                                 SqlConnection conn = null;
-                                string strKoneksi = "Data source = LAPTOP-GBDHL8HFBEATRIXDEVANTI; " +
+                                string strKoneksi = "Data source = LAPTOP-GBDHL8HF/BEATRIXDEVANTI; " +
                                     "initial catalog = {0}; " +
                                     "USer ID = {1}; password = {2}";
                                 conn = new SqlConnection(string.Format(strKoneksi, db, user, pass));
