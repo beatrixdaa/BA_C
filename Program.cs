@@ -141,7 +141,7 @@ namespace Insert_and_Get_Data
             str = "delete from HRD.Mahasiswa where NIM " + " = '" + nim + "'";
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.ExecuteNonQuery();
-            Console.WriteLine("Dta have been deleted");
+            Console.WriteLine("Data have been deleted");
         }
     
 
