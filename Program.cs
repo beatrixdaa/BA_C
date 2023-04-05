@@ -101,7 +101,7 @@ namespace Exerchise1
                                                     }
                                                 }
                                                 break;
-                                            case '4':
+                                          
                                                 {
                                                     string nim, almt;
                                                     Console.Clear();
